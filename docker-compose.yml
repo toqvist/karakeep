@@ -13,9 +13,9 @@ services:
       - .env
     environment:
       - MEILI_ADDR=http://127.0.0.1:7700
-      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY_IN_COOLIFY_UI}
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
       - NEXTAUTH_URL=http://localhost:3000
-      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET_IN_COOLIFY_UI}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
       - DATA_DIR=/data # DON'T CHANGE THIS
   chrome:
     image: gcr.io/zenika-hub/alpine-chrome:123
